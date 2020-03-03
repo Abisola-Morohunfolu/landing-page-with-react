@@ -47,6 +47,20 @@ const Navigation = () => {
 									</NavLink>
 								</li>
 							</ul>
+							<ul className="nav-info">
+								<li className="nav-info-label">Headquarters</li>
+								<li>Road 1 Ologuneru</li>
+								<li>Eleyele, Ibadan</li>
+								<li>Nigeria</li>
+							</ul>
+							<ul className="nav-info">
+								<li className="nav-info-label">Phone</li>
+								<li>+234 0810 000 0000</li>
+							</ul>
+							<ul className="nav-info">
+								<li className="nav-info-label">Legal</li>
+								<li>Privacy and Cookies</li>
+							</ul>
 						</div>
 					</div>
 				</div>

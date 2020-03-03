@@ -8,6 +8,7 @@ import About from './pages/About';
 import Approach from './pages/Approach';
 import Services from './pages/Services';
 import CaseStudies from './pages/CaseStudies';
+import Navigation from './components/Navigation';
 
 const routes = [
 	{ path: '/', name: 'Home', Component: Home },
@@ -33,6 +34,7 @@ function App() {
 					</Route>
 				))}
 			</div>
+			<Navigation />
 		</>
 	);
 }
