@@ -52,13 +52,7 @@ function App() {
 			});
 		}, 1000);
 
-		// setDimensions({
-		// 	height: window.innerHeight,
-		// 	width: window.innerWidth
-		// });
-
 		window.addEventListener('resize', debouncedHandledResize);
-		// alert(dimensions);
 
 		return () => {
 			window.removeEventListener('resize', debouncedHandledResize);
@@ -67,7 +61,7 @@ function App() {
 
 	return (
 		<>
-			<Header />
+			<Header dimensions={dimensions} />
 			{console.log(dimensions)}
 			<div className="App">
 				{routes.map(({ path, Component }) => (

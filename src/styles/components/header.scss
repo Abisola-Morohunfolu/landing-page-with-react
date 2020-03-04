@@ -17,18 +17,44 @@
 		}
 	}
 
-	.nav {
-		width: 25px;
+	.nav-toggle {
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+
+		@include media('<=tablet') {
+			margin-right: 24px;
+		}
 
 		@include media('<=phone') {
+			margin-right: 16px;
 			width: 20px;
 		}
-		span {
-			margin-bottom: 0.3rem;
-			background-color: $black;
-			width: 100%;
-			height: 2px;
-			display: block;
+
+		.hamburger-menu {
+			width: 25px;
+			span {
+				margin-bottom: 0.3rem;
+				background-color: $black;
+				width: 100%;
+				height: 2px;
+				display: block;
+			}
+		}
+
+		.hamburger-menu-close {
+			position: absolute;
+			display: none;
+
+			@include media('<=tablet') {
+				width: 56px;
+			}
+
+			@include media('<=phone') {
+				width: 48px;
+			}
 		}
 	}
 }
